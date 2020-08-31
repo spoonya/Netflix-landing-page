@@ -1,1 +1,1 @@
-# Netflix-landing-page
+# Netflix-starter-page clone
