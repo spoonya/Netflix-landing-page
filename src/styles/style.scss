@@ -1,9 +1,9 @@
 @import 'utils/vars';
 
-@import 'index/stl.scss';
+@import 'mixins/buttons.scss';
+
+@import 'index/intro.scss';
 
 @import 'common/global';
-
 @import 'common/header';
-
 @import 'common/footer';

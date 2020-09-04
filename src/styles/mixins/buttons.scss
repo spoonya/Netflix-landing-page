@@ -1,0 +1,12 @@
+@mixin link($width, $height, $radius) {
+    padding: $width $height;
+
+    border-radius: $radius;
+    background-color: $color-secondary-light;
+
+    &:hover {
+        transition: background-color .1s linear;
+
+        background-color: lighten($color-secondary-light, 4);
+    }
+}
