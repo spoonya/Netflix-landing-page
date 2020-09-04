@@ -26,7 +26,7 @@
 .intro__inner {
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 59%;
     left: 50%;
 
     display: flex;
@@ -37,7 +37,7 @@
     width: 100%;
     max-width: 950px;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -59%);
     text-align: center;
 }
 
@@ -80,12 +80,11 @@
 
 .intro__form-submit {
     position: relative;
-    // font-size: 1.5rem;
 
     color: $color-primary-light;
     border-left: 1px solid $color-tertiary-dark;
 
-    @include link(15px, 170px, 0);
+    @include link(15px, 160px, 0);
 
     & span {
         font-size: 1.7rem;
