@@ -54,22 +54,22 @@
     margin: 1rem;
 }
 
-.intro__form {
+.form-start {
     margin-top: .85rem;
 }
 
-.intro__form-title {
+.form-start__title {
     font-size: 1.2rem;
 
     margin-bottom: 1.2rem;
 }
 
-.intro__form-inner {
+.form-start__inner {
     display: flex;
     align-items: stretch;
 }
 
-.intro__form-input {
+.form-start__input {
     font-size: 1.1rem;
 
     min-width: 450px;
@@ -78,7 +78,7 @@
     background-color: $color-primary-light;
 }
 
-.intro__form-submit {
+.form-start__submit {
     position: relative;
 
     color: $color-primary-light;

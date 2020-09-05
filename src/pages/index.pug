@@ -1,15 +1,51 @@
 extends common/layout
 
 block content
-    section.intro(style='background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%), url(img/intro-bg.jpg);')
+    section.intro(style="background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%), url(img/intro-bg.jpg);")
         .intro__inner
             h1.intro__title Unlimited movies, TV shows and more.
             h2.intro__subtitle Watch anywhere. Cancel anytime.
+            form.form-start
+                h3.form-start__title Ready to watch? Enter your email to create or restart your membership.
+                .form-start__inner
+                    input.form-start__input(type="text" placeholder="Email adress")
+                    button.form-start__submit: span Try 30 days free
 
-            form.intro__form
-                h3.intro__form-title Ready to watch? Enter your email to create or restart your membership.
-                .intro__form-inner
-                    input.intro__form-input(type='text', placeholder='Email adress')
-                    button.intro__form-submit: span Try 30 days free
+    section.features
+        .features__inner
+            .features__item
+                .features__item-img-container
+                    img.features__item-img(src="img/features/f1.jpg" alt="")
+                .features__item-descrip
+                    h3.features__item-title Create profiles for kids.
+                    p.features__item-txt Send kids on adventures with their favorite characters in a space made just for them — free with your membership.
 
+            .features__item
+                .features__item-img-container
+                    img.features__item-img(src="img/features/f2.png" alt="")
+                    video.features__item-vid.vid--tv(autoplay playsinline muted loop)
+                        source(src="img/features/v2.m4v" type="video/mp4")
+                .features__item-descrip
+                    h3.features__item-title Enjoy on your TV.
+                    p.features__item-txt Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
 
+            .features__item
+                .features__item-img-container
+                    img.features__item-img(src="img/features/f3-1.jpg" alt="")
+                    .features__item-panel
+                        img.features__item-panel-img(src="img/features/f3-2.png" alt="")
+                        p.features__item-panel-txt Stranger Things <br>
+                            span Downloading...
+                        img.features__item-panel-img(src="img/features/download-icon.gif" alt="")
+                .features__item-descrip
+                    h3.features__item-title Download your shows to watch offline.
+                    p.features__item-txt Save your favorites easily and always have something to watch.
+
+            .features__item
+                .features__item-img-container
+                    img.features__item-img(src="img/features/f4.png" alt="")
+                    video.features__item-vid.vid--mac(autoplay playsinline muted loop)
+                        source(src="img/features/v1.m4v" type="video/mp4")
+                .features__item-descrip
+                    h3.features__item-title Watch everywhere.
+                    p.features__item-txt Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.
