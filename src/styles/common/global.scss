@@ -43,14 +43,13 @@ h6 {
 }
 
 p {
-    margin: .5 rem 0;
+    margin: .5rem 0;
 }
 
 input {
     font: inherit;
 
     border: none;
-    // outline: none;
     background: none;
 }
 
@@ -68,6 +67,7 @@ button {
     cursor: pointer;
     letter-spacing: inherit;
 
+    color: inherit;
     border: none;
     outline: none;
     background: none;
@@ -83,7 +83,6 @@ body {
     line-height: 1.1;
 
     margin: 0;
-    // letter-spacing: 1px;
 
     color: $color-primary-light;
     background-color: $color-primary-dark;

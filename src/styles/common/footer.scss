@@ -1,3 +1,40 @@
 .footer {
-    border: 1px solid red;
+    padding: 70px 0;
+}
+
+.footer__inner {
+    padding: 0 300px 0 150px;
+}
+
+.footer__items-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item-link {
+    font-size: .8rem;
+
+    margin-bottom: 1.5rem;
+
+    color: lighten($color-tertiary-dark, 35);
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.footer__item-link--contact {
+        font-size: 1rem;
+
+        margin-bottom: 2rem;
+    }
+
+    &.footer__item-link--country {
+        margin-top: 1.5rem;
+    }
 }

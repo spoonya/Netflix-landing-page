@@ -1,10 +1,13 @@
 @import 'utils/vars';
 
-@import 'mixins/buttons.scss';
-
-@import 'index/intro.scss';
-@import 'index/features.scss';
-
 @import 'common/global';
+
+@import 'mixins/buttons';
+
+@import 'index/intro';
+@import 'index/features';
+@import 'index/faq';
+@import 'index/form-start';
+
 @import 'common/header';
 @import 'common/footer';
