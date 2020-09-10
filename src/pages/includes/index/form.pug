@@ -1,5 +1,6 @@
-form.form-start
+form.form-start(action="")
     h3.form-start__title Ready to watch? Enter your email to create or restart your membership.
     .form-start__inner
-        input.form-start__input(type="text" placeholder="Email address")
+        input.form-start__input(type="text" name="email" placeholder="Email address")
         button.form-start__submit: span Try 30 days free
+            svg.form-start__icon: use(xlink:href="img/sprite.svg#next")

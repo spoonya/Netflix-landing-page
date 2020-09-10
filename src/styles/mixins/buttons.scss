@@ -1,7 +1,7 @@
-@mixin link($width, $height, $radius) {
+@mixin link($width, $height, $r1, $r2, $r3, $r4) {
     padding: $width $height;
 
-    border-radius: $radius;
+    border-radius: $r1 $r2 $r3 $r4;
     background-color: $color-secondary-light;
 
     &:hover {

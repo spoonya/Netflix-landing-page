@@ -10,23 +10,26 @@ block content
     section.features
         .features__inner
             .features__item
-                .features__item-img-container
-                    img.features__item-img(src="img/features/f1.jpg" alt="")
                 .features__item-descrip
                     h3.features__item-title Create profiles for kids.
                     p.features__item-txt Send kids on adventures with their favorite characters in a space made just for them — free with your membership.
+                .features__item-img-container
+                    img.features__item-img(src="img/features/f1.jpg" alt="")
 
             .features__item
-                .features__item-img-container
-                    img.features__item-img(src="img/features/f2.png" alt="")
-                    //- img.features__item-vid.vid--tv(src="img/features/v2.gif" alt="")
-                    video.features__item-vid.vid--tv(autoplay playsinline muted loop)
-                        source(src="img/features/v2.m4v" type="video/mp4")
                 .features__item-descrip
                     h3.features__item-title Enjoy on your TV.
                     p.features__item-txt Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+                .features__item-img-container
+                    img.features__item-img(src="img/features/f2.png" alt="")
+                    img.features__item-vid.vid--tv(src="img/features/v2.gif" alt="")
+                    //- video.features__item-vid.vid--tv(autoplay playsinline muted loop)
+                    //-     source(src="img/features/v2.m4v" type="video/mp4")
 
             .features__item
+                .features__item-descrip
+                    h3.features__item-title Download your shows to watch offline.
+                    p.features__item-txt Save your favorites easily and always have something to watch.
                 .features__item-img-container
                     img.features__item-img(src="img/features/f3-1.jpg" alt="")
                     .features__item-panel
@@ -34,19 +37,16 @@ block content
                         p.features__item-panel-txt Stranger Things <br>
                             span Downloading...
                         img.features__item-panel-img(src="img/features/download-icon.gif" alt="")
-                .features__item-descrip
-                    h3.features__item-title Download your shows to watch offline.
-                    p.features__item-txt Save your favorites easily and always have something to watch.
 
             .features__item
-                .features__item-img-container
-                    img.features__item-img(src="img/features/f4.png" alt="")
-                    //- img.features__item-vid.vid--mac(src="img/features/v1.gif" alt="")
-                    video.features__item-vid.vid--mac(autoplay playsinline muted loop)
-                        source(src="img/features/v1.m4v" type="video/mp4")
                 .features__item-descrip
                     h3.features__item-title Watch everywhere.
                     p.features__item-txt Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.
+                .features__item-img-container
+                    img.features__item-img(src="img/features/f4.png" alt="")
+                    img.features__item-vid.vid--mac(src="img/features/v1.gif" alt="")
+                    //- video.features__item-vid.vid--mac(autoplay playsinline muted loop)
+                    //-     source(src="img/features/v1.m4v" type="video/mp4")
 
     section.faq
         .container
@@ -56,40 +56,46 @@ block content
                     button.faq__item-question What is Netflix?
                         svg.faq__item-icon: use(xlink:href="img/sprite.svg#plus")
                     .faq__item-answer
-                        p.faq__item-answer-txt Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
-                        p.faq__item-answer-txt You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                        .faq__item-answer-txt
+                            p Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                            p You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
 
                 li.faq__item
                     button.faq__item-question How much does Netflix cost?
                         svg.faq__item-icon: use(xlink:href="img/sprite.svg#plus")
                     .faq__item-answer
-                        p.faq__item-answer-txt Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EUR7.99 to EUR11.99 a month. No extra costs, no contracts.
+                        .faq__item-answer-txt
+                            p Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EUR7.99 to EUR11.99 a month. No extra costs, no contracts.
 
                 li.faq__item
                     button.faq__item-question Where can I watch?
                         svg.faq__item-icon: use(xlink:href="img/sprite.svg#plus")
                     .faq__item-answer
-                        p.faq__item-answer-txt Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
-                        p.faq__item-answer-txt You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                        .faq__item-answer-txt
+                            p Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                            p You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
 
                 li.faq__item
                     button.faq__item-question How do I cancell?
                         svg.faq__item-icon: use(xlink:href="img/sprite.svg#plus")
                     .faq__item-answer
-                        p.faq__item-answer-txt Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                        .faq__item-answer-txt
+                        p Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
 
                 li.faq__item
                     button.faq__item-question What can I watch on Netflix?
                         svg.faq__item-icon: use(xlink:href="img/sprite.svg#plus")
                     .faq__item-answer
-                        p.faq__item-answer-txt Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want. Join free for 30 days to see everything Netflix has to offer.
+                        .faq__item-answer-txt
+                            p Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want. Join free for 30 days to see everything Netflix has to offer.
 
                 li.faq__item
                     button.faq__item-question Is Netflix good for kids?
                         svg.faq__item-icon: use(xlink:href="img/sprite.svg#plus")
                     .faq__item-answer
-                        p.faq__item-answer-txt The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
-                        p.faq__item-answer-txt Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                        .faq__item-answer-txt
+                            p The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+                            p Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
 
                 li.faq__item
                     button.faq__item-question How does the free trial work?

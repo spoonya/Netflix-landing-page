@@ -7,6 +7,16 @@
     background-position: center;
     background-size: cover;
 
+    @include media-tablet-ls {
+        min-height: 95vh;
+    }
+    @include media-smartphone-ls {
+        min-height: 80vh;
+    }
+    @include media-smartphone-ls {
+        min-height: 85vh;
+    }
+
     &::after {
         position: absolute;
         top: 0;
@@ -46,10 +56,21 @@
     font-weight: 600;
 
     max-width: 625px;
+
+    @include media-smartphone-ls {
+        font-size: 1.7rem;
+    }
 }
 
 .intro__subtitle {
     font-size: 1.625rem;
 
     margin: 1rem;
+
+    @include media-smartphone-ls {
+        font-size: 1.4rem;
+    }
+    @include media-smartphone-ls {
+        font-size: 1.2rem;
+    }
 }

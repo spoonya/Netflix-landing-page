@@ -19,13 +19,17 @@
     align-items: center;
     justify-content: space-between;
 
-    margin: 0 3.5rem;
+    margin: 0 1.5rem;
 }
 
 .header__logo {
     max-width: 170px;
+
+    @include media-smartphone-pt {
+        max-width: 130px;
+    }
 }
 
 .header__link {
-    @include link(8px, 18px, 3px);
+    @include link(8px, 18px, 3px, 3px, 3px, 3px);
 }

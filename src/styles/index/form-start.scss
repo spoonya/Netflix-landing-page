@@ -1,4 +1,8 @@
 .form-start {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     margin-top: .85rem;
 }
 
@@ -13,29 +17,74 @@
     font-size: 1.2rem;
 
     margin-bottom: 1.2rem;
+
+    @include media-tablet-pt {
+        font-size: 1.4rem;
+
+        max-width: 300px;
+    }
+    @include media-smartphone-ls {
+        font-size: 1.2rem;
+    }
 }
 
 .form-start__inner {
     display: flex;
     align-items: stretch;
+
+    @include media-tablet-pt {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .form-start__input {
     font-size: 1.1rem;
 
+    width: 100%;
     min-width: 450px;
     padding: 20px 10px;
 
+    border-radius: 2px 0 0 2px;
     background-color: $color-primary-light;
+
+    @include media-tablet-ls {
+        min-width: 400px;
+    }
+    @include media-tablet-pt {
+        max-width: 450px;
+        margin-bottom: 15px;
+
+        border-radius: 2px;
+    }
+    @include media-smartphone-ls {
+        font-size: 1rem;
+
+        padding: 12px 10px;
+    }
+    @include media-smartphone-pt {
+        min-width: 300px;
+        max-width: 300px;
+    }
 }
 
 .form-start__submit {
     position: relative;
 
     color: $color-primary-light;
+    border: 1px solid $color-secondary-light;
     border-left: 1px solid $color-tertiary-dark;
 
-    @include link(15px, 160px, 0);
+    @include link(15px, 160px, 0px, 2px, 2px, 0);
+    @include media-tablet-pt {
+        padding: 25px 120px;
+
+        border-radius: 2px;
+    }
+    @include media-smartphone-ls {
+        padding: 20px 90px;
+    }
+
 
     & span {
         font-size: 1.7rem;
@@ -48,5 +97,23 @@
 
         transform: translate(-50%, -50%);
         text-transform: uppercase;
+
+        @include media-tablet-pt {
+            font-size: 1.2rem;
+        }
+        @include media-smartphone-ls {
+            font-size: 1rem;
+        }
+    }
+}
+
+.form-start__icon {
+    width: 17px;
+    height: 17px;
+    margin-left: .5rem;
+
+    fill: $color-primary-light;
+    @include media-tablet-pt {
+        display: none;
     }
 }
