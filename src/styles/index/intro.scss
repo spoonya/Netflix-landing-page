@@ -1,21 +1,20 @@
 .intro {
     position: relative;
-
-    min-height: 100vh;
+    // min-height: 100vh;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    @include media-tablet-ls {
-        min-height: 95vh;
-    }
-    @include media-smartphone-ls {
-        min-height: 80vh;
-    }
-    @include media-smartphone-ls {
-        min-height: 85vh;
-    }
+    // @include media-tablet-ls {
+    //     min-height: 95vh;
+    // }
+    // @include media-smartphone-ls {
+    //     min-height: 80vh;
+    // }
+    // @include media-smartphone-ls {
+    //     min-height: 85vh;
+    // }
 
     &::after {
         position: absolute;
@@ -34,20 +33,18 @@
 }
 
 .intro__inner {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 59%;
-    left: 50%;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    width: 100%;
     max-width: 950px;
+    margin: 0 auto;
+    padding: 230px 0 160px;
 
-    transform: translate(-50%, -59%);
     text-align: center;
 }
 
