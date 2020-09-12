@@ -84,7 +84,10 @@
     @include media-smartphone-ls {
         padding: 20px 90px;
     }
-
+    &:focus {
+        outline: 1px dotted #212121;
+        outline: 5px auto -webkit-focus-ring-color;
+    }
 
     & span {
         font-size: 1.7rem;
